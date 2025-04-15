@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "alpinejs": "^3.14.9",
+    "animejs": "^4.0.1"
+  }
+}
