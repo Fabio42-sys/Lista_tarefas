@@ -25,13 +25,16 @@ function atualizarLista() {
         ${tarefa.texto}
       </span>
       <div>
-        <button onclick="alternar(${index})">${tarefa.concluida ? 'Desfazer' : 'Concluir'}</button>
-        <button onclick="excluir(${index})" style="color: red;">Excluir</button>
+        <button onclick="alternar(${index})" id="concBtn">${tarefa.concluida ? 'Desfazer' : 'Concluir'}</button>
+        <button onclick="excluir(${index})" id="excBtn">Excluir</button>
       </div>
     `;
     li.style.display = 'flex';
     li.style.justifyContent = 'space-between';
     li.style.alignItems = 'center';
+    li.style.border = "1px solid #000";
+    li.style.borderRadius = "10px";
+    li.style.padding = "8px";
     lista.appendChild(li);
   });
 
